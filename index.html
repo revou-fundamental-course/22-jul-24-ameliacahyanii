@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trage Website</title>
+
+    <!-- Icon -->
+    <link rel="icon" href="./assets/icon-logo.png" type="icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <section id="navbar">
+        <a href="#default" id="logo"><img height=40 src="./assets/icon-logo.png"><img>Trage</a>
+        <div id="navbar-right">
+            <a href="#home">Home</a>
+            <a href="#our-package">Our Package</a>
+            <a href="#contact">Call Us</a>
+        </div>
+        <button id="toggle-menu" class="toggle-menu-button">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </section>
+
+    <!-- Slider Image Section -->
+    <section class="container" id="home">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="./assets/img-hero-1.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./assets/img-hero-2.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./assets/img-hero-3.png" style="width:100%">
+            </div>
+            <div class="hero-text">
+                <h1>Find Your Getaway</h1>
+                <p>Find Your Perfect Getaway</p>
+                <a href="#our-pa">Let's Begin</a>
+            </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="container-about">
+        <div class="img-column">
+            <img src="./assets/img-about.png" alt="About Image">
+        </div>
+        <div class="desc-column">
+            <span>Why choose us?</span>
+            <h3>Moment Must Be Made With The Best Version</h3>
+            <p>Explore a world of possibilities with Trage, your ultimate travel companion. Whether you're
+                seeking a relaxing beach getaway, an adventurous mountain trek, or a cultural city escape, our site
+                offers.
+            </p>
+            <a href="/" class="read-more">Read More</a>
+        </div>
+    </section>
+
+    <!-- Beneficial Section -->
+    <section class="container benefits">
+        <div class="heading">
+            <span>Enjoy With Us</span>
+            <h1>You Will Get</h1>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-globe"></i>
+                <div class="content">
+                    <h3>Worldwide</h3>
+                    <p>Destinations in different parts of the world</p>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-tag"></i>
+                <div class="content">
+                    <h3>A Lot Of Discount</h3>
+                    <p>Lots of discount opportunities in every trip</p>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-wallet"></i>
+                <div class="content">
+                    <h3>Affordable Price</h3>
+                    <p>There are special prices</p>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <div class="content">
+                    <h3>Food & Drinks</h3>
+                    <p>There are a variety of recommendations for the best foods and drinks</p>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <div class="content">
+                    <h3>Affordable Hotels</h3>
+                    <p>Has many comfortable hotel recommendations</p>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-headset"></i>
+                <div class="content">
+                    <h3>24/7 Support</h3>
+                    <p>Have 24/7 service to serve users if they need help</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Package Section -->
+    <section class="package container" id="our-package">
+        <h1>Travel Packages</h1>
+        <div class="card-container container">
+            <div class="card">
+                <img src="assets/package-1.png" alt="Destination 1">
+                <div class="card-content">
+                    <h2>Machu Picchu</h2>
+                    <p>Peru, Latin America.</p>
+                    <button class="btn-package" onclick="bookNow('Destination 1')">Book Now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/package-2.png" alt="Destination 2">
+                <div class="card-content">
+                    <h2>Grand Canal</h2>
+                    <p>Discover ancient ruins and rich cultural heritage.</p>
+                    <button class="btn-package" onclick="bookNow('Destination 2')">Book Now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/package-3.png" alt="Destination 3">
+                <div class="card-content">
+                    <h2>Pura Ulun Danu Bratan</h2>
+                    <p>Bali, Indonesia</p>
+                    <button class="btn-package" onclick="bookNow('Destination 3')">Book Now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/package-4.png" alt="Destination 4">
+                <div class="card-content">
+                    <h2>Sydney Opera House</h2>
+                    <p>Sydney, Australia</p>
+                    <button class="btn-package" onclick="bookNow('Destination 4')">Book Now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/package-5.png" alt="Destination 5">
+                <div class="card-content">
+                    <h2>The Pragser Wildsee </h2>
+                    <p>South Tyrol, Italy</p>
+                    <button class="btn-package" onclick="bookNow('Destination 5')">Book Now</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/package-6.png" alt="Destination 6">
+                <div class="card-content">
+                    <h2>Great Wall Of China</h2>
+                    <p>Tiongkok, China</p>
+                    <button class="btn-package" onclick="bookNow('Destination 6')">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Page -->
+    <section class="testimonial container">
+        <h1 style="margin-bottom: 5px; margin-top: 90px;">Our Clients Says</h1>
+        <div class="outerdiv">
+            <div class="innerdiv">
+                <!-- div1 -->
+                <div class="div1 eachdiv">
+                    <div class="userdetails">
+                        <div class="imgbox">
+                            <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-daniel.jpg"
+                                alt="">
+                        </div>
+                        <div class="detbox">
+                            <p class="name">Daniel Clifford</p>
+                            <p class="designation">Verified Graduate</p>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <h4>"Excellent service and support!</h4>
+                        <p>“From the moment I arrived in Bali, I was captivated by the island's natural beauty and rich
+                            culture. The trip was meticulously organized with a perfect blend of relaxation and
+                            adventure. The local guides were incredibly knowledgeable, providing deep insights into
+                            Balinese traditions and history. The accommodations were luxurious and offered stunning
+                            views. From exploring ancient temples to enjoying traditional dance performances, every
+                            aspect of the trip exceeded my expectations. I felt truly immersed in the experience, and I
+                            can't wait to return for another adventure!”</p>
+
+                    </div>
+                </div>
+                <!-- div2 -->
+                <div class="div2 eachdiv">
+                    <div class="userdetails">
+                        <div class="imgbox">
+                            <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jonathan.jpg"
+                                alt="">
+                        </div>
+                        <div class="detbox">
+                            <p class="name">Jonathan Walters</p>
+                            <p class="designation">Verified Graduate</p>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <h4>The team was very supportive and kept me motivated</h4>
+                        <p>“The trek through the Andes was nothing short of spectacular. I started as a total newbie
+                            with minimal trekking experience, but the well-organized.”</p>
+
+                    </div>
+                </div>
+                <!-- div3 -->
+                <div class="div3 eachdiv">
+                    <div class="userdetails">
+                        <div class="imgbox">
+                            <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-kira.jpg"
+                                alt="">
+                        </div>
+                        <div class="detbox">
+                            <p class="name dark">Kira Whittle</p>
+                            <p class="designation dark">Verified Graduate</p>
+                        </div>
+                    </div>
+                    <div class="review dark">
+                        <h4>Such a life-changing experience. Highly recommended!</h4>
+                        <p>“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure
+                            from
+                            professionals who can help me learn programming step by step. I was encouraged to enroll by
+                            a
+                            former student of theirs who can only say wonderful things about the program. The entire
+                            curriculum and staff did not disappoint. They were very hands-on and I never had to wait
+                            long
+                            for assistance. The agile team project, in particular, was outstanding. It took my learning
+                            to
+                            the next level in a way that no tutorial could ever have.”</p>
+                    </div>
+                </div>
+                <!-- div4 -->
+                <div class="div4 eachdiv">
+                    <div class="userdetails">
+                        <div class="imgbox">
+                            <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jeanette.jpg"
+                                alt="">
+                        </div>
+                        <div class="detbox">
+                            <p class="name dark">Jeanette Harmon</p>
+                            <p class="designation dark">Verified Graduate</p>
+                        </div>
+                    </div>
+                    <div class="review dark">
+                        <h4>An overall wonderful and rewarding experience</h4>
+                        <p>“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good
+                            living
+                            while doing something I love. ”</p>
+                    </div>
+                </div>
+                <!-- div5 -->
+                <div class="div5 eachdiv">
+                    <div class="userdetails">
+                        <div class="imgbox">
+                            <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-patrick.jpg"
+                                alt="">
+                        </div>
+                        <div class="detbox">
+                            <p class="name">Patrick Abrams</p>
+                            <p class="designation">Verified Graduate</p>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <h4>Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from
+                            them
+                            and learning from their experiences was easy.</h4>
+                        <p>“ The staff seem genuinely concerned about my progress which I find really refreshing. The
+                            program gave me the confidence necessary to be able to go out in the world and present
+                            myself as
+                            a capable junior developer. The standard is above the rest.”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="form" id="contact">
+        <h1 class="text-title">Hi, Do You Wanna Ask Something?</h1>
+        <form class="form-container" id="contactForm" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <span id="nameError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <span id="emailError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject">
+                <span id="subjectError" class="error"></span>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <span id="messageError" class="error"></span>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <div id="popup" class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <p id="popupMessage"></p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+        </ul>
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#home">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="#our-package">Our Package</a></li>
+            <li class="menu__item"><a class="menu__link" href="#contact">Call Us</a></li>
+
+        </ul>
+        <p>&copy;2024 Amelia Cahyani | All Rights Reserved</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
